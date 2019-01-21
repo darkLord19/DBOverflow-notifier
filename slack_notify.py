@@ -15,19 +15,19 @@ def notify(table_list):
             + Constants.DB_NAME.upper()
             + "\
             Table Name: "
-            + table.table_name.upper()
+            + table.table_name[0].upper()
             + "\
             Field Name: "
-            + table.field_name.upper()
+            + table.field_name[0].upper()
             + "\
             Data Type of Field: "
-            + table.field_datatype.upper()
+            + table.field_datatype[0].upper()
             + "\
             Maximum Value data Type can hold: "
-            + table.field.maxvalue.upper()
+            + table.field_maxvalue
             + "\
             Current Value of Field: "
-            + table.current_max.upper()
+            + table.current_max
         )
 
         data = {"text": msg}

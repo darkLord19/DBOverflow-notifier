@@ -11,6 +11,9 @@ def about_to_run_out(current_field_max, field_maxvalue):
 mydb = connect()
 tables_with_auto_incr = get_auto_icr_fld(mydb)
 
+for table in tables_with_auto_incr:
+        print(table.table_name)
+
 tables_having_fld_abt_run_out = []
 
 for table in tables_with_auto_incr:
