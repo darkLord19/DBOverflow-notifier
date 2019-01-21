@@ -23,6 +23,7 @@ def get_auto_icr_fld(mydb):
 
         tables_with_auto_icr = []
 
+        #http://code.openark.org/blog/mysql/checking-for-auto_increment-capacity-with-single-query
         sql = "SELECT COLUMN_NAME, DATA_TYPE, \
                     IF(LOCATE('unsigned', COLUMN_TYPE) > 0,1,0) AS IS_UNSIGNED, \
             (CASE DATA_TYPE \
