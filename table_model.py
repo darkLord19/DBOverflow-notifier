@@ -1,4 +1,4 @@
-class Database:
+class Table:
     def __init__(
         self,
         table_name,
