@@ -3,3 +3,4 @@ class Constants:
     DB_HOST = 'localhost'
     DB_USER = 'test'
     DB_PWD = 'Temp#1234'
+    DB_NAME = 'test'
