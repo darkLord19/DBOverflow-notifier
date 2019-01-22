@@ -1,5 +1,5 @@
 # db-notify-slack
-This program checks for auto incrementing fileds of tables of database and notifies on slack if any of the fields is about to run out of its datatypes range.
+This program checks for auto incrementing fileds of tables of database and notifies on slack if any of the fields is about to run out of its datatypes range. It uses Slack's Incoming Channel Webhooks to send messages to channel.
 
 # Dependecies
 ```
