@@ -6,3 +6,4 @@ class Constants:
     DB_USER = "test"
     DB_PWD = "Temp#1234"
     DB_NAME = "test"
+    THRESHOLD = 90

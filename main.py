@@ -1,9 +1,10 @@
 from db_connection import *
 from slack_notify import *
+from secrets import Constants
 
 
 def about_to_run_out(current_field_max, field_maxvalue):
-    if (100 * current_field_max) / field_maxvalue >= 90:
+    if (100 * current_field_max) / field_maxvalue >= Constants.THRESHOLD:
         return True
     return False
 
