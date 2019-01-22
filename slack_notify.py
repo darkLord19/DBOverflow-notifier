@@ -13,7 +13,7 @@ def notify(table_list):
             + "Database Name: "
             + Constants.DB_NAME
             + "\nTable Name: "
-            + table.table_name[0]
+            + table.table_name[0:]
             + "\nField Name: "
             + table.field_name[0:]
             + "\nData Type of Field: "
