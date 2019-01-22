@@ -24,3 +24,6 @@ Maximum Value data Type can hold: 32767
 Current Value of Field: 31434
 ```
 Currently it notifies when auto increment value is >=90% of range of that data type. You can change it by changing threshold value in secrets.py.
+
+# Database
+You can use init_db.sql to create test tables and insert_data.sql to insert enough data into those table so that we get message on slack. You can use your existing database also. 
