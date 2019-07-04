@@ -8,7 +8,7 @@ class Constants:
     DB_USER = os.environ.get('DB_USER')
     DB_PWD = os.environ.get('DB_PASSWD')
     DB_NAME = os.environ.get('DB_NAME')
-    if os.environ.get('OVERFLOW_THRESHOLD'):
+    if os.environ.get('OVERFLOW_THRESHOLD') is not None:
         THRESHOLD = os.environ.get('OVERFLOW_THRESHOLD')
     else:
         THRESHOLD = 90
