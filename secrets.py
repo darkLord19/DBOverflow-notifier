@@ -1,9 +1,14 @@
+import os
+
 class Constants:
     WEBHOOK = (
-        "https://hooks.slack.com/services/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"
+	    os.environ.get('SLACK_INCOMING_WEBHOOK')
     )
-    DB_HOST = "localhost"
-    DB_USER = "test"
-    DB_PWD = "Temp#1234"
-    DB_NAME = "test"
-    THRESHOLD = 90
+    DB_HOST = os.environ.get('DB_HOST')
+    DB_USER = os.environ.get('DB_USER')
+    DB_PWD = os.environ.get('DB_PASSWD')
+    DB_NAME = os.environ.get('DB_NAME')
+    if os.environ.get('OVERFLOW_THRESHOLD'):
+        THRESHOLD = os.environ.get('OVERFLOW_THRESHOLD')
+    else:
+        THRESHOLD = 90
